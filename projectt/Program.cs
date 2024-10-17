@@ -1,4 +1,6 @@
-﻿Item et = new Item("Tomat",25);
+﻿// Delopgave 1
+
+Item et = new Item("Tomat",25);
 
 FoodItem to = new FoodItem("hvidløgsflutes",5,79);
 
@@ -12,6 +14,9 @@ NonFoodItem tre = new NonFoodItem("atombombe",7500000,["uran", "plutonium", "ste
 //Console.WriteLine(tre.ToString());
 
 
+// Delopgave 2
+
+/*
 FoodItem[] Items = new FoodItem[10];
 for (int i = 0; i < Items.Length; i++)
 {
@@ -21,4 +26,18 @@ for (int i = 0; i < Items.Length; i++)
 foreach (FoodItem Item in Items)
 {
 	Console.WriteLine(Item.ToString());
+}
+*/
+
+// Delopgave 3
+
+NonFoodItem[] Items = new NonFoodItem[10];
+for (int i = 0; i < Items.Length; i++)
+{
+	Items[i] = new NonFoodItem("Item ",12.3 * i, new string[] {"butter", "cream"});
+}
+
+foreach (NonFoodItem Item in Items)
+{
+	Console.WriteLine(Item);
 }
